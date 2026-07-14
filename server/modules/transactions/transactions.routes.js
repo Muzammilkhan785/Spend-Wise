@@ -1,0 +1,10 @@
+const express = require('express');
+const router = express.Router();
+const controller = require('./transactions.controller');
+router.get('/export', controller.exportCSV);
+router.post('/', controller.create);
+router.put('/:id', controller.update);
+router.get('/', controller.getAll);
+router.get('/:id', controller.getById);
+router.delete('/:id', controller.remove);
+module.exports = router;
