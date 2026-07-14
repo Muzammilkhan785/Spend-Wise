@@ -18,7 +18,7 @@
 
 ---
 
-## ✨ Overview
+## Overview
 
 SpendWise is a client-server personal finance web app. Users add transactions, watch dashboards update in real time, and manage settings — all backed by a modular Express API and a PostgreSQL database.
 
@@ -38,25 +38,25 @@ Server (Express — Port 5000)
 
 | Layer | Technology | Role |
 |:---:|:---:|:---|
-| 🎨 Frontend | React 19 + React Router 7 | SPA with 3 pages: Dashboard, Transactions, Settings |
-| ⚙️ Backend | Express 5 (Node.js) | RESTful JSON API — modular route/controller/query design |
-| 🗄️ Database | PostgreSQL | Relational storage for users, transactions, categories, settings |
-| 🔀 Proxy | CRA dev proxy | Forwards `/api` calls from `:3000` → `:5000` |
+|  Frontend | React 19 + React Router 7 | SPA with 3 pages: Dashboard, Transactions, Settings |
+|  Backend | Express 5 (Node.js) | RESTful JSON API — modular route/controller/query design |
+|  Database | PostgreSQL | Relational storage for users, transactions, categories, settings |
+|  Proxy | CRA dev proxy | Forwards `/api` calls from `:3000` → `:5000` |
 
 </div>
 
 ---
 
-## 🚀 Features
+##  Features
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=2500&pause=800&color=9CA3AF&center=false&vCenter=true&width=700&lines=%F0%9F%93%8A+Live+dashboard+with+income%2Fexpense%2Fbalance+stats;%F0%9F%92%B8+Full+transaction+CRUD+with+filters+%26+pagination;%F0%9F%93%88+Monthly+bar+charts+%26+category+donut+charts+(Recharts);%F0%9F%93%A5+CSV+export+of+transactions;%F0%9F%8E%A8+Dark%2FLight+theme+%2B+high-contrast+mode;%E2%9A%99%EF%B8%8F+Configurable+currency%2C+timezone+%26+notifications" alt="Features Typing SVG" />
 
 ---
 
-## 🧱 Tech Stack
+##  Tech Stack
 
 <details>
-<summary><strong>🖥️ Server Dependencies</strong></summary>
+<summary><strong> Server Dependencies</strong></summary>
 
 | Package | Version | Purpose |
 |---|---|---|
@@ -70,7 +70,7 @@ Server (Express — Port 5000)
 </details>
 
 <details>
-<summary><strong>💻 Client Dependencies</strong></summary>
+<summary><strong> Client Dependencies</strong></summary>
 
 | Package | Version | Purpose |
 |---|---|---|
@@ -85,7 +85,7 @@ Server (Express — Port 5000)
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 <details>
 <summary><strong>Click to expand full directory tree</strong></summary>
@@ -159,7 +159,7 @@ SpendWise/
 
 ---
 
-## 🗄️ Database Schema
+##  Database Schema
 
 <div align="center">
 
@@ -168,7 +168,7 @@ SpendWise/
 </div>
 
 <details>
-<summary><strong>👤 users</strong></summary>
+<summary><strong> users</strong></summary>
 
 | Column | Type | Constraints |
 |---|---|---|
@@ -182,7 +182,7 @@ SpendWise/
 </details>
 
 <details>
-<summary><strong>🏷️ categories</strong></summary>
+<summary><strong> categories</strong></summary>
 
 | Column | Type | Constraints |
 |---|---|---|
@@ -195,7 +195,7 @@ SpendWise/
 </details>
 
 <details>
-<summary><strong>💳 transactions</strong></summary>
+<summary><strong> transactions</strong></summary>
 
 | Column | Type | Constraints |
 |---|---|---|
@@ -212,7 +212,7 @@ SpendWise/
 </details>
 
 <details>
-<summary><strong>⚙️ settings</strong></summary>
+<summary><strong> settings</strong></summary>
 
 | Column | Type | Default |
 |---|---|---|
@@ -228,7 +228,7 @@ SpendWise/
 </details>
 
 <details>
-<summary><strong>📱 user_devices</strong></summary>
+<summary><strong> user_devices</strong></summary>
 
 | Column | Type | Constraints |
 |---|---|---|
@@ -245,7 +245,7 @@ SpendWise/
 
 ---
 
-## 🔌 API Reference
+##  API Reference
 
 <div align="center">
 
@@ -291,11 +291,11 @@ SpendWise/
 }
 ```
 
-> ⚠️ All endpoints currently use a **hardcoded `TEST_USER_ID`** — real authentication is planned for a future phase.
+>  All endpoints currently use a **hardcoded `TEST_USER_ID`** — real authentication is planned for a future phase.
 
 ---
 
-## 🎨 Design System
+##  Design System
 
 <div align="center">
 
@@ -319,17 +319,17 @@ SpendWise/
 
 ---
 
-## 🖼️ Pages at a Glance
+##  Pages at a Glance
 
 | Page | Highlights |
 |---|---|
-| 📊 **Dashboard** | 3 stat cards (Income/Expense/Balance) · Monthly bar chart · Category donut chart · Recent transactions — all fetched in parallel via `Promise.all` |
-| 💳 **Transactions** | Filter by All/Income/Expense · 7 per page pagination · Create/Edit/Delete · Auto-refresh |
-| ⚙️ **Settings** | General prefs, appearance/theme, data export, security panel |
+|  **Dashboard** | 3 stat cards (Income/Expense/Balance) · Monthly bar chart · Category donut chart · Recent transactions — all fetched in parallel via `Promise.all` |
+|  **Transactions** | Filter by All/Income/Expense · 7 per page pagination · Create/Edit/Delete · Auto-refresh |
+|  **Settings** | General prefs, appearance/theme, data export, security panel |
 
 ---
 
-## 🏁 Getting Started
+##  Getting Started
 
 ### Prerequisites
 ![Node](https://img.shields.io/badge/Node.js-v18+-339933?style=flat-square&logo=node.js&logoColor=white)
@@ -362,7 +362,7 @@ npm start
 # → http://localhost:3000  (proxies /api to :5000)
 ```
 
-### 🔐 Environment Variables — `server/.env`
+###  Environment Variables — `server/.env`
 
 | Variable | Example | Description |
 |---|---|---|
@@ -374,8 +374,6 @@ npm start
 | `PORT` | `5000` | Server port |
 | `NODE_ENV` | `development` | Environment mode |
 | `TEST_USER_ID` | `00000000-...-000001` | Temporary hardcoded user |
-
-> 🚨 **Never commit `.env`** — ensure it's listed in `.gitignore`.
 
 ### 📜 Available Scripts
 
@@ -391,7 +389,7 @@ npm start
 
 <div align="center">
 
-### 🛠️ Built With
+###  Built With
 
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Express.js](https://img.shields.io/badge/-Express.js-000000?style=flat-square&logo=express)
@@ -403,6 +401,6 @@ npm start
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0f1a,100:10B981&height=120&section=footer" width="100%"/>
 
-*Made with 💸 for people who actually want to know where their money went.*
+*Made with  for people who actually want to know where their money went.*
 
 </div>
