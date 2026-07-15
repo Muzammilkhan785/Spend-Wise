@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import AppLayout          from './components/layout/AppLayout';
 import DashboardPage      from './pages/DashboardPage';
 import TransactionsPage   from './pages/TransactionsPage';
