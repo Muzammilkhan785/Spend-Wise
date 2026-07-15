@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Spend-Wise/static/css/main.180590ba.css",
+    "main.js": "/Spend-Wise/static/js/main.9634cb48.js",
+    "index.html": "/Spend-Wise/index.html",
+    "main.180590ba.css.map": "/Spend-Wise/static/css/main.180590ba.css.map",
+    "main.9634cb48.js.map": "/Spend-Wise/static/js/main.9634cb48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.180590ba.css",
+    "static/js/main.9634cb48.js"
+  ]
+}
